@@ -35,7 +35,7 @@ body {
   isolation: isolate;
 }
 
-.tint-overlay {
+tint-overlay {
   position: absolute;
   inset: 0.5px 0 0 0;
   z-index: 1;
@@ -59,10 +59,10 @@ body {
   inset: 0;
   border-radius: inherit;
   box-shadow: 
-    inset 1px 1px 0 rgba(255, 255, 255, 0.95),
-    inset 3px 3px 12px rgba(255, 255, 255, 0.7),
-    inset -1px -1px 0 rgba(255, 255, 255, 0.85),
-    inset -3px -3px 12px rgba(255, 255, 255, 0.5);
+    inset 1px 1px 0 rgba(255, 255, 255, 1),
+    inset 3px 3px 12px rgba(255, 255, 255, 1),
+    inset -1px -1px 0 rgba(255, 255, 255, 1),
+    inset -3px -3px 12px rgba(255, 255, 255, 1);
   -webkit-mask-image: 
     radial-gradient(circle at 0px 0px, black 0%, transparent 60px),
     radial-gradient(circle at 100% 100%, black 0%, transparent 60px);
