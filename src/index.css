@@ -58,16 +58,17 @@ body {
   position: absolute;
   inset: 0;
   border-radius: inherit;
+  mix-blend-mode: plus-lighter;
   box-shadow: 
-    inset 1px 1px 0 rgba(255, 255, 255, 0.95),
-    inset 3px 3px 12px rgba(255, 255, 255, 0.7),
-    inset -1px -1px 0 rgba(255, 255, 255, 0.85),
-    inset -3px -3px 12px rgba(255, 255, 255, 0.5);
+    inset 1px 1px 0 rgba(255, 255, 255, 0.9),
+    inset 4px 4px 15px rgba(255, 255, 255, 0.4),
+    inset -1px -1px 0 rgba(255, 255, 255, 0.9),
+    inset -4px -4px 15px rgba(255, 255, 255, 0.4);
   -webkit-mask-image: 
-    radial-gradient(circle at 0px 0px, black 0%, transparent 60px),
-    radial-gradient(circle at 100% 100%, black 0%, transparent 60px);
+    radial-gradient(circle at 10px 10px, black 0%, transparent 80px),
+    radial-gradient(circle at calc(100% - 10px) calc(100% - 10px), black 0%, transparent 80px);
   mask-image: 
-    radial-gradient(circle at 0px 0px, black 0%, transparent 60px),
-    radial-gradient(circle at 100% 100%, black 0%, transparent 60px);
+    radial-gradient(circle at 10px 10px, black 0%, transparent 80px),
+    radial-gradient(circle at calc(100% - 10px) calc(100% - 10px), black 0%, transparent 80px);
   pointer-events: none;
 }
