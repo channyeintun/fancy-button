@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@400;500;600;700;800&display=swap');
+
+@theme {
+  --font-parkinsans: "Parkinsans", sans-serif;
+}
+
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+  color: #0f172a;
+  background-color: #f8fafc;
+}
+
+body {
+  margin: 0;
+  padding: 40px;
+  min-width: 320px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* COMPONENT STYLES */
+
+.container {
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  isolation: isolate;
+}
+
+.tint-overlay {
+  position: absolute;
+  inset: 0.5px 0 0 0;
+  z-index: 1;
+  background: rgba(28, 29, 32, 0.22);
+  mix-blend-mode: screen;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.rim-light {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  clip-path: inset(6px round inherit);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3);
+  pointer-events: none;
+}
+
+.diagonal-highlights {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: 
+    inset 1.2px 1.2px 0 rgba(255, 255, 255, 0.8),
+    inset 3px 3px 6px rgba(255, 255, 255, 0.3),
+    inset -1.2px -1.2px 0 rgba(255, 255, 255, 0.7),
+    inset -3px -3px 6px rgba(255, 255, 255, 0.25);
+  -webkit-mask-image: 
+    radial-gradient(circle at 0px 0px, black 0%, transparent 40px),
+    radial-gradient(circle at 100% 100%, black 0%, transparent 40px);
+  mask-image: 
+    radial-gradient(circle at 0px 0px, black 0%, transparent 40px),
+    radial-gradient(circle at 100% 100%, black 0%, transparent 40px);
+  pointer-events: none;
+}
