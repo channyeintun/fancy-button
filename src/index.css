@@ -50,7 +50,7 @@ body {
   inset: 0;
   border-radius: inherit;
   clip-path: inset(1px round inherit);
-  box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.15);
   mix-blend-mode: plus-lighter;
   pointer-events: none;
   z-index: 2;
@@ -63,15 +63,15 @@ body {
   mix-blend-mode: plus-lighter;
   z-index: 3;
   box-shadow: 
-    inset 1px 1px 0.5px rgba(255, 255, 255, 0.7),
-    inset 2.5px 2.5px 8px rgba(255, 255, 255, 0.25),
-    inset -1px -1px 0.5px rgba(255, 255, 255, 0.7),
-    inset -2.5px -2.5px 8px rgba(255, 255, 255, 0.25);
+    inset 0.5px 0.5px 0.5px rgba(255, 255, 255, 1),
+    inset 2.5px 2.5px 8px rgba(255, 255, 255, 0.35),
+    inset -0.5px -0.5px 0.5px rgba(255, 255, 255, 1),
+    inset -2.5px -2.5px 8px rgba(255, 255, 255, 0.35);
   -webkit-mask-image: 
-    radial-gradient(circle at 10px 10px, black 0%, transparent 100px),
-    radial-gradient(circle at calc(100% - 10px) calc(100% - 10px), black 0%, transparent 100px);
+    radial-gradient(circle at 10px 10px, black 0%, transparent 50px),
+    radial-gradient(circle at calc(100% - 10px) calc(100% - 10px), black 0%, transparent 50px);
   mask-image: 
-    radial-gradient(circle at 10px 10px, black 0%, transparent 100px),
-    radial-gradient(circle at calc(100% - 10px) calc(100% - 10px), black 0%, transparent 100px);
+    radial-gradient(circle at 10px 10px, black 0%, transparent 50px),
+    radial-gradient(circle at calc(100% - 10px) calc(100% - 10px), black 0%, transparent 50px);
   pointer-events: none;
 }
